@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			body{
+				background-image: url(img/背景.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-attachment: fixed;
+			}
+			#box{
+				margin: 0 auto;
+				width: 30%;
+				height: auto;
+				margin-top: 15%;
+				text-align: center;
+				background: #00000099;
+				padding: 20px 50px;
+			}
+			#box .form{
+				margin-top: 50px;
+			}
+			.item{
+				margin-top: 15px;
+			}
+			input{
+				width: 180px;
+				font-size:18px ;
+				border: 0px;
+				border-bottom: 2px solid white;
+				padding: 5px 10px;
+				background: #1C1C1C00;
+				color: #FFFFFF;
+			}
+			h1{
+				color: #FFFFFF;
+			}
+			button{
+				margin-top: 50px;
+				width: 180px;
+				height: 30px;
+				font-size: 25px;
+				font-weight: 700px;
+				color: white;
+				background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+				border: 0px;
+				border-radius: 15px;
+				outline: none;
+			}
+			i{
+				color: white;
+			}
+			button:hover{
+				cursor: pointer;
+			}
+			.user{
+				color: white;
+				position: absolute;
+				display: block;
+				right: 40%;
+				top: 54%;
+				text-decoration: none;
+			}
+			.user1{
+				color: white;
+				position: absolute;
+				display: block;
+				right: 36%;
+				top: 54%;
+				text-decoration: none;
+			}
+			.user,.user1{
+				font-size: 18px;
+			}
+			.user:hover,.user1:hover{
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="login-index">
+		<div id="box">
+			<h1>Login</h1>
+		<div class="form">
+				<div class="item">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<input type="text" placeholder="Username"/>
+				</div>
+			
+				<div class="item">
+					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+					<input type="text" placeholder="Password"/>
+				</div>
+
+		</div>
+		<button type="button">Login</button>
+		</div>
+		<a href="#" class="user">忘了密码?</a>
+		<a href="#" class="user1">注册账户</a>
+		</div>
+	</body>
+</html>
