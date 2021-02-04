@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>登录</title>
+		<title>注册</title>
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
 		<style type="text/css">
 			body{
@@ -11,7 +11,7 @@
 				background-size: 100% 100%;
 				background-attachment: fixed;
 			}
-			#box{
+			#register-box{
 				margin: 0 auto;
 				width: 30%;
 				height: auto;
@@ -20,11 +20,12 @@
 				background: #00000099;
 				padding: 20px 50px;
 			}
-			#box .form{
-				margin-top: 50px;
-			}
 			.item{
-				margin-top: 15px;
+				color: white;
+				margin-top: 25px;
+			}
+			h1{
+				color: white
 			}
 			input{
 				width: 180px;
@@ -35,8 +36,8 @@
 				background: #1C1C1C00;
 				color: #FFFFFF;
 			}
-			h1{
-				color: #FFFFFF;
+			.form{
+				margin-top: 50px;
 			}
 			button{
 				margin-top: 50px;
@@ -50,41 +51,33 @@
 				border-radius: 15px;
 				outline: none;
 			}
-			i{
-				color: white;
-			}
 			button:hover{
 				cursor: pointer;
 			}
- 			.user{
-				color: white;
-				text-decoration: none;
-			} 
- 			.user:hover,.user1:hover{
-				text-decoration: underline;
-			} 
 		</style>
 	</head>
 	<body>
-	<div id="login-index">
-		<div id="box">
-			<h1>Login</h1>
-		<div class="form">
+		<div id="register-box">
+			<div class="form">
+				<h1>Register</h1>
 				<div class="item">
-					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
-					<input type="text" placeholder="Username"/>
+					<i class="fa fa-user-o" aria-hidden="true"></i>
+					<input type="text" placeholder="输入账号"/>
 				</div>
-			
 				<div class="item">
 					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
-					<input type="text" placeholder="Password"/>
+					<input type="text" placeholder="输入密码"/>
 				</div>
-				<a href="#" class="user">忘了密码?</a>
-				<a href="register-index.html" class="user">注册账户</a>
-		</div>
-
-		<button type="button">Login</button>
-		</div>
+				<div class="item">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>
+					<input type="text" placeholder="输入昵称"/>
+				</div>
+				<div class="item">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<input type="text" placeholder="输入邮箱"/>
+				</div>
+			</div>
+			<button type="button">Register</button>
 		</div>
 	</body>
 </html>
